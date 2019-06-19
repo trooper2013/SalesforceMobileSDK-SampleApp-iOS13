@@ -32,9 +32,6 @@ final class AnySubscription: Subscription {
     }
 }
 
-extension JSONDecoder: TopLevelDecoder {}
-
-
 extension RestClient {
     
     func send(request: RestRequest) -> AnyPublisher<(restResponse: [[String:Any]], rawResponse: URLResponse), RequestError> {

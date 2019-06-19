@@ -27,7 +27,7 @@ class ContactListModel: BindableObject {
     }
 
     func fetchContacts() {
-        let request = RestClient.shared.request(forQuery: "SELECT Name FROM User LIMIT 10")
+        let request = RestClient.shared.request(forQuery: "SELECT Name FROM Contact LIMIT 10")
         let assign = Subscribers.Assign(object: self, keyPath: \.contacts)
         RestClient.shared.send(request: request)
                          .map ({  // transform to Contact array
