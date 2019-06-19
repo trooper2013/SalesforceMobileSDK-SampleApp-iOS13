@@ -1,0 +1,15 @@
+.DS_Store
+DerivedData
+xcuserdata
+project.xcworkspace
+artifacts
+node_modules
+shared/test/test_credentials.json
+build/
+node_modules/
+.github/
+package-lock.json
+npm-debug.log
+index.ios.bundle*
+Pods/
+mobile_sdk/
